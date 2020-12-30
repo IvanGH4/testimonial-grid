@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+  background-color: #ecf2f8;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card h4 {
+  margin: 20px 0px;
+}
+
+.card p {
+  font-size: 13px;
+}
+
+.card-1 small, .card-2 small, .card-3 small, .card-4 small, .card-5 small {
+  opacity: 50%;
+}
+
+.card-1 p, .card-2 p, .card-3 p, .card-4 p, .card-5 p {
+  opacity: 70%;
+}
+
+.card .card-header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.card .card-header img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.card-1 {
+  position: relative;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: one;
+  color: white;
+  background-color: #7541c8;
+}
+
+.card-1 img {
+  border: solid 2px #cfcfcf;
+}
+
+.card-1 .fa-quote-left {
+  position: absolute;
+  top: 0px;
+  right: 50px;
+  font-size: 100px;
+  opacity: 50%;
+}
+
+.card-2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: two;
+  background-color: #48556a;
+  color: white;
+}
+
+.card-3 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: three;
+  background-color: white;
+  color: #48556a;
+}
+
+.card-4 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: four;
+  background-color: #19212e;
+  color: #cfcfcf;
+}
+
+.card-4 img {
+  border: solid 2px #7541c8;
+}
+
+.card-5 {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 4;
+  grid-area: five;
+  background-color: white;
+  color: #48556a;
+}
+
+.container {
+  max-width: 1000px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 2;
+      grid-template-rows: 2;
+      grid-template-areas: "one one two five" "three four four five";
+  gap: 20px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 40px 20px;
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    -ms-grid-rows: 5;
+        grid-template-rows: 5;
+        grid-template-areas: "one" "two" "three" "four" "five";
+  }
+}
+/*# sourceMappingURL=styles.css.map */
