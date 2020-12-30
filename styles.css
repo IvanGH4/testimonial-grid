@@ -32,8 +32,8 @@ body {
           box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card h4 {
-  margin: 20px 0px;
+.card h3 {
+  font-size: 16px;
 }
 
 .card p {
@@ -44,7 +44,7 @@ body {
   opacity: 50%;
 }
 
-.card-1 p, .card-2 p, .card-3 p, .card-4 p, .card-5 p {
+.card-1 .large-quote, .card-2 .large-quote, .card-3 .large-quote, .card-4 .large-quote, .card-5 .large-quote {
   opacity: 70%;
 }
 
@@ -87,6 +87,10 @@ body {
   opacity: 50%;
 }
 
+.card-1 .main-quote {
+  color: white;
+}
+
 .card-2 {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
@@ -116,6 +120,10 @@ body {
   border: solid 2px #7541c8;
 }
 
+.card-4 .main-quote {
+  color: white;
+}
+
 .card-5 {
   -ms-grid-row: 1;
   -ms-grid-row-span: 2;
@@ -123,6 +131,12 @@ body {
   grid-area: five;
   background-color: white;
   color: #48556a;
+}
+
+.main-quote {
+  font-weight: 600;
+  font-size: 18px !important;
+  margin: 10px 0px;
 }
 
 .container {
@@ -138,7 +152,7 @@ body {
 }
 
 .attribution {
-  margin-top: 30px;
+  margin: 30px 0px 10px 0px;
 }
 
 @media (max-width: 800px) {
